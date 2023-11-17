@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: ReaChord_Act_Item2Sound
+ * ReaScript Name: ReaChord Item2Sound
  * Author: author xupeng
  * Licence: GPL v3
  * REAPER: 7.0
@@ -12,13 +12,7 @@
  * v1.0 (2016-01-29)
  	+ Initial Release
 --]]
--- @description ReaChord Item2Sound
--- @author xupeng
--- @version 1.0.11
--- @changelog
---  Update
--- @provides
---   *
+
 
 
 local r = reaper

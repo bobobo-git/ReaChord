@@ -1,3 +1,17 @@
+--[[
+ * ReaScript Name: ReaChord Util
+ * Author: author xupeng
+ * Licence: GPL v3
+ * REAPER: 7.0
+ * Extensions: None
+ * Version: 1.0
+--]]
+ 
+--[[
+ * Changelog:
+ * v1.0 (2016-01-29)
+ 	+ Initial Release
+--]]
 function ListX4(lst)
     local newLst = {}
     for i=1, 4 do

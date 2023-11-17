@@ -1,10 +1,18 @@
--- @description ReaChord Main
--- @author xupeng
--- @version 1.0.11
--- @changelog
---  Update
--- @provides
---   *
+--[[
+ * ReaScript Name: ReaChord Main
+ * Author: author xupeng
+ * Licence: GPL v3
+ * REAPER: 7.0
+ * Extensions: None
+ * Version: 1.0
+--]]
+ 
+--[[
+ * Changelog:
+ * v1.0 (2016-01-29)
+ 	+ Initial Release
+--]]
+
 
 
 local r = reaper

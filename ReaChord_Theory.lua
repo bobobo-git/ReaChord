@@ -1,3 +1,18 @@
+--[[
+ * ReaScript Name: ReaChord Theory
+ * Author: author xupeng
+ * Licence: GPL v3
+ * REAPER: 7.0
+ * Extensions: None
+ * Version: 1.0
+--]]
+ 
+--[[
+ * Changelog:
+ * v1.0 (2016-01-29)
+ 	+ Initial Release
+--]]
+
 local r = reaper
 print = r.ShowConsoleMsg
 
