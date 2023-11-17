@@ -3,7 +3,7 @@ Reaper Chord Track (Lua Version)
 
 Reapack Repo Url
 
-https://github.com/xupeng1206/ReaChord/raw/main/index.xml
+https://github.com/bobobo-git/ReaChord/raw/main/index.xml
 
 Demo:
 ![demo.png](doc%2Fdemo.png)
