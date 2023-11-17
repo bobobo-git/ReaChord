@@ -15,6 +15,9 @@
         <source file="../ReaChord_Util.lua" type="script">https://raw.githubusercontent.com/bobobo-git/Reachord/main/ReaChord_Util.lua</source>
         <source file="../ChordTrack.RTrackTemplate" type="script">https://raw.githubusercontent.com/bobobo-git/Reachord/main/ChordTrack.RTrackTemplate</source>
       </version>
+      <changelog>
+        <![CDATA[ - fixed marker / region modules - minor cosmetic changes ]]>
+      </changelog>
       <metadata>
         <description>ReaChord</description>
       </metadata>
