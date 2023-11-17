@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf8"?>
 <index version="1" name="ReaChord">
-  <category name="Tracks">
+  <category name="..">
     <reapack name="ReaChord: a chord track solution for REAPER" type="script" desc="ReaChord">
       <version name="1.0.7" author="xupeng1206" time="2023-11-14T09:54:34Z">
         <source file="ReaChord/README.md" type="script">https://raw.githubusercontent.com/bobobo-git/Reachord/main/README.md</source>
