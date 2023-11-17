@@ -20,7 +20,7 @@
     </reapack>
   </category>
   <category name="TrackTemplate">
-    <reapack name="ReaChord: a chord track solution for REAPER" type="script">
+    <reapack name="ReaChord: Tracktemplate" type="tracktemplate">
       <version name="1.0.7" author="xupeng1206" time="2023-11-14T09:54:34Z">
         <source file="../ChordTrack.RTrackTemplate" type="script">https://github.com/xupeng1206/ReaChord/raw/v1.0.11/ChordTrack.RTrackTemplate</source>
       </version>
