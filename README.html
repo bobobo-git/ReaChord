@@ -1,0 +1,260 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>README.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h1 id="reachord">ReaChord</h1>
+    <p>Reaper Chord Track (Lua Version) - bobobo test</p>
+    <p>Reapack Repo Url</p>
+    <p>
+      <a href="https://github.com/bobobo-git/ReaChord/raw/main/index.xml">https://github.com/bobobo-git/ReaChord/raw/main/index.xml</a>
+    </p>
+    <p>Demo:
+<img width="50%"  src="doc/demo.png" alt="demo.png" /></p>
+    <h2 id="quick-start">Quick Start</h2>
+    <p>
+      <code>Load files down below in reaper's action list</code>
+    </p>
+    <pre>
+      <code>1. ReaChord_Main.lua
+Chord selector GUI
+
+2. ReaChord_Act_Item2Sound.lua
+Bind this script on your mouse action.
+
+3. ReaChord_Reader.lua
+Display the chord at the cursor.
+
+4. ReaChord_Reader_Start.lua
+ReaChord_Reader Starter, you may change command id if not work.
+</code>
+    </pre>
+    <h2 id="details">Details</h2>
+    <h3 id="create-track">1. Create Track</h3>
+    <pre>
+      <code>Copy the ChordTrack.RTrackTemplate to your track template folder, use the track template to create track. than add your piano vst to the RECHORD_MIDI track.
+</code>
+    </pre>
+    <h3 id="binding-the-mouse-action">2. Binding the mouse action</h3>
+    <pre>
+      <code>My Configure
+
+Media Item / Left Click / Cmd(Win) + Ctrl
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/mouse_action.png" alt="mouse_action.png" />
+    </p>
+    <pre>
+      <code>After binded, hold down the cmd(win)+ctrl, click the chord item, you can hear the chord sound.
+</code>
+    </pre>
+    <h3 id="dock-the-reachord_reader.lua">3. Dock the ReaChord_Reader.lua</h3>
+    <pre>
+      <code>1. Open the ReaChord_Reader
+2. Right click the reader ui when it show no chord, select the dock
+3. Move it to the any position you like, for me, top position is good.
+4. When chords show, right click can switch the display mode
+
+PS.  most code all copy from X-Raym Region's Clock, thanks a lot.
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/reader1.png" alt="reader1.png" />
+    </p>
+    <p>
+      <img width="50%" src="doc/reader2.png" alt="reader2.png" />
+    </p>
+    <pre>
+      <code>For me, I need the ReaChord_Reader Opened when reaper start. So, I put he ReaChord_Reader_Start.lua in my gloabal startup cammand.
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/startup.png" alt="startup.png" />
+    </p>
+    <h3 id="select-the-main-scale">4. Select the main scale</h3>
+    <p>
+      <img width="50%" src="doc/scale1.png" alt="scale1.png" />
+    </p>
+    <p>
+      <img width="50%" src="doc/scale2.png" alt="scale2.png" />
+    </p>
+    <h3 id="select-chords">5. Select chords</h3>
+    <h4 id="degree-line">5.0 Degree line</h4>
+    <pre>
+      <code>Just show the note degree
+</code>
+    </pre>
+    <h4 id="select-the-chord-root">5.1 Select the chord root</h4>
+    <pre>
+      <code>You can change the chord root in this line, the blue note is the one you selected, and the pink note all in key, the grey note all not in key. you can pick the anyone, whatever pink or grey.
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/chord_root.png" alt="chord_root.png" />
+    </p>
+    <h4 id="select-the-chord-bass">5.2 Select the chord bass</h4>
+    <pre>
+      <code>You can point the bass note for this chord. such as G/F
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/chord_bass.png" alt="chord_bass.png" />
+    </p>
+    <h4 id="insert-length">5.3 Insert Length</h4>
+    <pre>
+      <code>You can point insert chord items length
+1 B -&gt; 1 Beat
+2 B -&gt; 2 Beat
+
+you can try different choice than insert chord to see what is it.
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/beat.png" alt="beat.png" />
+    </p>
+    <h4 id="chord-map-section">5.4 Chord Map Section</h4>
+    <h5 id="click-and-listen">5.4.1 Click and Listen</h5>
+    <pre>
+      <code>1. Click any chord your like, you can hear the chord sound.
+2. Hold down ESC can stop play chord
+3. Hold down Left Shift, than click the chord btn can insert the chord item quickly
+4. If chord sound too low or too high, your can change the Oct at top right Oct Drop down list.
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/map.png" alt="map.png" />
+    </p>
+    <h5 id="find-similar-chord">5.4.2 Find Similar Chord</h5>
+    <pre>
+      <code>1. Hold down Left ALT, than click the chord btn, can show the chords which two or more same note with current chord.
+2. You can click the chord name, show the chord notes
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/similar_chords.png" alt="similar_chords.png" />
+    </p>
+    <h5 id="find-the-scale-contain-current-chord">5.4.3 Find the scale contain current chord</h5>
+    <pre>
+      <code>1. Hold down Left CTRL, than click the chord btn, can show the scales which contain current chord.
+2. You can click the scale name, show the scale notes
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/chord_in_scales.png" alt="chord_in_scales.png" />
+    </p>
+    <h4 id="omit-chord-note">5.5 Omit chord note</h4>
+    <pre>
+      <code>1. The blue note means include this note, you can click it make it be grey(omit).
+
+PS. The first note always be grey, it's chord bass, you can't change it here.
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/voicing.png" alt="voicing.png" />
+    </p>
+    <h4 id="shift-the-chord-voicing">5.6 Shift the chord voicing</h4>
+    <pre>
+      <code>You can click the '&lt;', '&gt;' to shift the voicing
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/voicing.png" alt="voicing.png" />
+    </p>
+    <h4 id="listen-insert">5.7 Listen, Insert</h4>
+    <pre>
+      <code>1. Click Listen, can listen current voicing
+2. Click Insert, can Insert the chord item to the chord track
+</code>
+    </pre>
+    <h4 id="piano-display">5.8 Piano Display</h4>
+    <pre>
+      <code>Just display
+</code>
+    </pre>
+    <h3 id="chord-pads">6. Chord Pads</h3>
+    <p>
+      <code>Binding Key</code>
+      <img width="50%" src="doc/pad.png" alt="pad.png" />
+    </p>
+    <pre>
+      <code>1. Click the 'Init Chord Pad', it will give your 12 basic chord bas the selected scale. than you can press the binding key on keybord to trigger the chord.
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/pad_basic.png" alt="pad_basic.png" />
+    </p>
+    <pre>
+      <code>1. You can drag and drop any chord you like from Chord Map to Chord Pad.
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/pad_drag.png" alt="pad_drag.png" />
+    </p>
+    <h3 id="extension-function">7. Extension Function</h3>
+    <h4 id="updown-1-semitone">7.1 Up/Down 1 semitone</h4>
+    <pre>
+      <code>1. Select some chord items
+2. Click the Up/Down 1 semitone, you can shift the chord item.
+</code>
+    </pre>
+    <h4 id="refresh">7.2 Refresh</h4>
+    <pre>
+      <code>1. Click Refresh, can refresh the chord item's metadata.
+2. When bpm change, the chord track be mass, you can click the Refresh make the chord track adapt to the new bpm
+3. When you need to add chord progression to you bank, make sure you run Refresh firstly
+</code>
+    </pre>
+    <h4 id="items-to-markersregions">7.3 Items To Markers/Regions</h4>
+    <p>
+      <code>It can make items to markers/regions</code>
+    </p>
+    <p>
+      <img width="50%" src="doc/marker.png" alt="marker.png" />
+    </p>
+    <p>
+      <img width="50%" src="doc/region.png" alt="region.png" />
+    </p>
+    <h4 id="chord-progression-bank">7.4 Chord Progression Bank</h4>
+    <h5 id="add">7.1 Add</h5>
+    <pre>
+      <code>1. Select 1 chord progression (multi chord items) in chord track.
+2. Click the Add, I will show the add menu
+3. name this chord progression than clock save bank, it will be stored
+
+PS the refresh btn here same the big Refresh Btn
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/add_bank.png" alt="add_bank.png" />
+    </p>
+    <h5 id="insert">7.2 Insert</h5>
+    <pre>
+      <code>1. Select 1 chord progression in bank, also you can filter by name
+2. click Insert, the chord progression will be inserted into chord track at cursor
+</code>
+    </pre>
+    <h5 id="delete">7.3 Delete</h5>
+    <pre>
+      <code>1. Select 1 chord progression in bank, also you can filter by name
+2. click Delete, you can delete it when confirmed
+</code>
+    </pre>
+    <p>
+      <img width="50%" src="doc/delete_bank.png" alt="delete_bank.png" />
+    </p>
+    <h2 id="extend">Extend</h2>
+    <p>You can add new scale or chord in ReaChord_Theory.lua, and aslo looking forward to your PR.</p>
+  </body>
+</html>

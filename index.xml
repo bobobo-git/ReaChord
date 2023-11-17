@@ -13,7 +13,7 @@
         <source main="main" file="ReaChord_Reader_Start.lua" type="script">https://github.com/xupeng1206/ReaChord/raw/v1.0.11/ReaChord_Reader_Start.lua</source>
         <source file="ReaChord_Theory.lua" type="script">https://github.com/xupeng1206/ReaChord/raw/v1.0.11/ReaChord_Theory.lua</source>
         <source file="ReaChord_Util.lua" type="script">https://github.com/xupeng1206/ReaChord/raw/v1.0.11/ReaChord_Util.lua</source>
-        <source file="ChordTrack.RTrackTemplate" type="script">https://github.com/xupeng1206/ReaChord/raw/v1.0.11/ChordTrack.RTrackTemplate</source>
+        <source file="ChordTrack.RTrackTemplate" type="tracktpl">https://github.com/xupeng1206/ReaChord/raw/v1.0.11/ChordTrack.RTrackTemplate</source>
       </version>
       <metadata>
         <description>ReaChord</description>
