@@ -1,3 +1,17 @@
+--[[
+ * ReaScript Name: ReaChord_Act_Item2Sound
+ * Author: author xupeng
+ * Licence: GPL v3
+ * REAPER: 7.0
+ * Extensions: None
+ * Version: 1.0
+--]]
+ 
+--[[
+ * Changelog:
+ * v1.0 (2016-01-29)
+ 	+ Initial Release
+--]]
 -- @description ReaChord Item2Sound
 -- @author xupeng
 -- @version 1.0.11
