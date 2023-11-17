@@ -3,7 +3,7 @@
   <category name="Tracks">
     <reapack name="ReaChord: a chord track solution for REAPER" type="script">
       <version name="1.0.7" author="xupeng1206" time="2023-11-14T09:54:34Z">
-        <source file="../README.md" type="script">https://github.com/xupeng1206/ReaChord/raw/v1.0.11/README.md</source>
+        <source main="" file="../README.md" type="script">https://github.com/xupeng1206/ReaChord/raw/v1.0.11/README.md</source>
         <source file="../ReaChord_About.jpg" type="script">https://github.com/xupeng1206/ReaChord/raw/v1.0.11/ReaChord_About.jpg</source>
         <source main="main" file="../ReaChord_Act_Item2Sound.lua" type="script">https://github.com/xupeng1206/ReaChord/raw/v1.0.11/ReaChord_Act_Item2Sound.lua</source>
         <source main="main" file="../ReaChord_Banks.txt" type="script">https://github.com/xupeng1206/ReaChord/raw/v1.0.11/ReaChord_Banks.txt</source>
