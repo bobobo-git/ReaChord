@@ -9,7 +9,7 @@
  
 --[[
  * Changelog:
- * v1.0 (2016-01-29)
+ * v1.0 (2023-11-17)
  	+ Initial Release
 --]]
 
