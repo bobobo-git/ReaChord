@@ -1,5 +1,5 @@
 # ReaChord
-Reaper Chord Track (Lua Version)
+Reaper Chord Track (Lua Version) - bobobo test
 
 Reapack Repo Url
 
